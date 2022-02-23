@@ -1,0 +1,18 @@
+@import './utils/vars';
+@import './base/reset';
+@import './base/common';
+@import './components/conteiner';
+@import './utils/hidden';
+@import './components/modal';
+@import './utils/mixins';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/function';
+@import './layout/staff';
+@import './layout/clients';
+@import './layout/footer';
+
+@import './pages/filter';
+@import './pages/hero2';

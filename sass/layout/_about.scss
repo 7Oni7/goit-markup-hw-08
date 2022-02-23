@@ -1,0 +1,35 @@
+// .about {
+//     padding: 94px 0;
+
+.about__list {
+    display: flex;
+}
+.about__item {
+    & + & {
+        margin-left: 30px;
+    }
+}
+.about__box {
+    margin-bottom: 30px;
+
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__title {
+    @include font(14px, 700, 16px, 0.03em);
+
+    vertical-align: top;
+    margin-bottom: 10px;
+    color: var(--prymary-text-color);
+    text-transform: uppercase;
+}
+.about__text {
+    @include font(14px, 400, 24px, 0.03em);
+
+    color: var(--function-text-color);
+}

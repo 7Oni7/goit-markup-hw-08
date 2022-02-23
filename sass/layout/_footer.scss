@@ -1,0 +1,140 @@
+.footer {
+    padding: 60px 0;
+    background-color: #2f303a;
+}
+.footer__conteiner {
+    display: flex;
+    align-items: baseline;
+}
+.footer__box {
+    flex-grow: 1;
+}
+.footer__logo {
+    font-family: 'Raleway', sans-serif;
+    @include font(26px, 700, 31px, 0.02em);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.logo__second {
+    color: var(--accent-text-color);
+}
+
+.address {
+    display: flex;
+
+    margin-top: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    @include font(14px, 400, 24px, 0.03em);
+}
+
+.address__item {
+    & + & {
+        margin-top: 9px;
+    }
+}
+
+.address__text {
+    color: var(--title-text-color);
+}
+.address__mail {
+    color: rgba(255, 255, 255, 0.6);
+}
+.address__tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+// .footer-conteiner-icon {
+//     margin-left: 70px;
+// }
+
+.footer__title {
+    margin-bottom: 20px;
+
+    @include font(14px, 700, 16px, 0.03em);
+
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+.footer-socials__list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socials__item {
+    & + & {
+        margin-left: 10px;
+    }
+}
+
+.footer-socials__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
+}
+.footer-socials__icon {
+    fill: var(--title-text-color);
+}
+// .footer-conteiner-socials {
+//     margin-left: 70px;
+// }
+.mailings {
+    margin-left: 93px;
+}
+.mailings__field {
+    display: flex;
+}
+.mailings__imput {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+
+    padding-left: 16px;
+}
+.mailings__wrap {
+    & + & {
+        margin-left: 12px;
+    }
+}
+
+.mailings__btn {
+    width: 200px;
+    height: 50px;
+
+    @include font(16px, 700, 30px, 0.06em);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: #ffffff;
+
+    border-radius: 4px;
+    background-color: var(--accent-text-color);
+    border-color: transparent;
+}
+.mailings__icon {
+    margin-left: 10px;
+}

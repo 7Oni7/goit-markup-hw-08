@@ -1,0 +1,37 @@
+// .function {
+//     padding: 94px 0;
+// }
+.section__nopaddingtop {
+    padding-top: 0;
+}
+
+.function {
+    display: flex;
+}
+
+.function__item {
+    position: relative;
+
+    & + & {
+        margin-left: 30px;
+    }
+}
+
+.function__wrap {
+    position: relative;
+}
+.function__toptext {
+    position: absolute;
+    top: 224px;
+    left: 0;
+
+    @include font(14px, 700, 16px, 0.03em);
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px;
+    width: 100%;
+}
